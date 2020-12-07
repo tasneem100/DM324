@@ -3,6 +3,8 @@ list-style-type: none;
 border: 1px solid #e7e7e7;
 background-color: #f3f3f3;
 overflow:hidden;
+padding:0px;
+margin:0px;
 }
 li{
     float:left;
@@ -13,7 +15,10 @@ li{
 li a{
 display:block;
 color:#666;
-padding:10px;
+padding-left:14px;
+padding-right:14px;
+padding-top:14px;
+padding-bottom:14px;
 }
 a{
     text-decoration:none;
@@ -27,9 +32,11 @@ li a.active{
     background-color: rgb(76,175,80);
     color: white;
 }
-div{
-    border: 3px dotted;
+div:not(.searchbar,.searchicon){
+    border-style:dotted;
+    border: 3px ;
     border-radius: 15px;
+    box-shadow: 25px 25px 25px dimgray;
     background-image:radial-gradient(white,lightblue)
 }
 table{
@@ -44,3 +51,21 @@ thead tr{
     text-align: center;
 }
 tbody tr:nth-child(odd){background-color:lightgray;}
+.searchbox{
+    width: 100%;
+    padding: 8px 8px;
+    border: none;
+    margin: 0 2px;
+    outline: none;
+}
+.sreachbar{
+    width: 20%;
+    height: auto;
+    display: flex;
+    border:1px;
+    border-style:solid;
+    margin:8px auto;
+    padding: 0px 10px;
+    border-radius: 24px;
+
+}
